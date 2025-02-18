@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal/Embedded CSS</title>
+    <style>
+        p{
+            color:blue;
+        }
+        li{
+            background-color: antiquewhite;
+            width: 50px;
+        }
+        /* id */
+        #embedded{
+            font-size: larger;
+            font-weight: bolder;
+            color: blue;
+        }
+        /* class */
+        .list{
+            color: brown;
+            text-align: right;
+        }
+/* for all */
+        *{
+            margin: 0;
+            padding-left: 0;
+        }
+        /* multiple selector */
+        .list,.last,#embedded{
+            background-color: antiquewhite;
+            font-size: 26px;
+        }
+
+     .end{
+        font-weight: 900;
+     }
+    </style>
+</head>
+<body>
+
+    <h2 id="embedded">Embedded CSS</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, atque!</p>
+    <p>Placeat aspernatur laudantium totam voluptas asperiores neque perspiciatis ducimus obcaecati!</p>
+    <p>Quibusdam nemo laboriosam deleniti libero tempora id accusantium dicta suscipit!</p>
+    <p>Velit ullam, mollitia quos laudantium accusamus magni modi porro exercitationem?</p>
+
+    <ol>
+        <li>AAA</li>
+        <br>
+        <li class="list">AAA</li>
+        <br>
+        <li class="list">AAA</li>
+        <br>
+        <li class="list">AAA</li>
+        <br>
+        <!-- double class -->
+        <li class="last end">AAA</li>
+    </ol>
+
+
+</body>
+</html>
